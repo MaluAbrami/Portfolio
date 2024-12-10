@@ -1,3 +1,8 @@
+/*Isso faz com que qualquer rolagem na página seja suave*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -14,6 +19,25 @@ header {
 
 section{
     padding: 200px 50px;
+}
+
+/*------------------------------------------------------------*/
+/*BOTÃO DE SETA QUE LEVA AO TOPO DA PÁGINA*/
+#rolaParaTopo{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: black;
+    padding: 15px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: none; /* Inicialmente escondido */
+    z-index: 1000;
+}
+
+#rolaParaTopo:hover{
+    transform: scale(1.2);
 }
 
 /*------------------------------------------------------------*/
@@ -56,7 +80,7 @@ section{
 
 /* Efeito ao passar o mouse */
 .menu-opcoes a:hover {
-    background-color: #555;
+    background-color: #E53935;
 }
 
 /*------------------------------------------------------------*/

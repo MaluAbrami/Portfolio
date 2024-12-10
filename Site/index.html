@@ -12,7 +12,7 @@
     <!--Cabeçalho-->
     <header>
         <!--Menu-->
-        <nav class="menu">
+        <nav id="topo" class="menu">
             <img src="https://avatars.githubusercontent.com/u/156939263?v=4" alt="logo">
             <ul class="menu-opcoes">
                 <li><a href="#sobre">Sobre Mim</a></li>
@@ -24,6 +24,11 @@
 
     <!--Seção Principal-->
     <main>
+        <!--Botão de seta que leva ao topo da página-->
+        <a href=#topo>
+            <button id="rolaParaTopo" class="botao-seta">&#8593;</button>
+        </a>
+
         <!--Seção Introdutória-->
         <section>
             <h2>Me chamo Maria Luiza Abrami</h2>
@@ -71,6 +76,9 @@
                 </a>
             </div>
         </section>
+
+        <!--Colocado ao final para evitar erros, primeiro espera renderizar toda a página para dai sim o JS funcionar-->
+        <script src="index.js"></script>
     </main>
 
     <!--Rodapé-->
