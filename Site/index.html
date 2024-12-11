@@ -12,14 +12,30 @@
     <!--Cabeçalho-->
     <header>
         <!--Menu-->
-        <nav id="topo" class="menu">
-            <img src="https://avatars.githubusercontent.com/u/156939263?v=4" alt="logo">
-            <ul class="menu-opcoes">
-                <li><a href="#sobre">Sobre Mim</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div id="topo" class="menu">
+            <img class="logo" src="https://avatars.githubusercontent.com/u/156939263?v=4" alt="logo">
+
+            <nav>
+                <ul class="menu-opcoes">
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </nav>
+
+            <div class="img-contato">
+                <a href="https://github.com/MaluAbrami" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+                </a>
+    
+                <a href="https://www.linkedin.com/in/maria-luiza-abrami-617bab330" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+                </a>
+    
+                <a href="https://www.dio.me/users/marialuizaabrami" target="_blank">
+                    <img src="https://assets.dio.me/ruGA6FVc7RCIzD_2CiaqcZVDbFtaojoZnaDHU8LxTiA/f:webp/q:80/w:48/L2Fzc2V0cy9kaW9tZS9sb2dvLW1pbmltaXplZC5wbmc" alt="DIO">
+                </a>
+            </div>
+        </div>
     </header>
 
     <!--Seção Principal-->
@@ -30,7 +46,7 @@
         </a>
 
         <!--Seção Introdutória-->
-        <section>
+        <section class="section-intro">
             <h2>Me chamo Maria Luiza Abrami</h2>
             <p>Seja muito bem-vindo(a) ao meu portfólio!</p>
         </section>
@@ -57,24 +73,6 @@
         <section class="section-projetos">
             <h2 id="projetos">Meus Principais Projetos</h2>
             <p>Em Desenvolvimento...</p>
-        </section>
-
-        <section class="section-contato">
-            <h2 id="contato">Conecte-se Comigo</h2>
-            <div class="img-contato">
-                <a href="https://github.com/MaluAbrami" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
-                </a>
-
-                <a href="https://www.linkedin.com/in/maria-luiza-abrami-617bab330" target="_blank">
-                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-                </a>
-
-                <a href="https://www.dio.me/users/marialuizaabrami" target="_blank">
-                    <img src="https://assets.dio.me/ruGA6FVc7RCIzD_2CiaqcZVDbFtaojoZnaDHU8LxTiA/f:webp/q:80/w:48/L2Fzc2V0cy9kaW9tZS9sb2dvLW1pbmltaXplZC5wbmc"
-                        alt="DIO">
-                </a>
-            </div>
         </section>
 
         <!--Colocado ao final para evitar erros, primeiro espera renderizar toda a página para dai sim o JS funcionar-->
