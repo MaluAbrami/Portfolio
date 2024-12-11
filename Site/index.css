@@ -107,27 +107,66 @@ p{
 
 /*------------------------------------------------------------*/
 
-.section-intro{
+/* Estilo para o texto digitado */
+#typewriter {
+    font-family: 'Courier New', monospace; /* Estilo de máquina de escrever */
+    font-size: 24px;
+    white-space: nowrap; /* Evita quebra de linha */
+    overflow: hidden; /* Oculta o texto que ainda não foi exibido */
+    border-right: 2px solid #000; /* Cursor piscante */
+    animation: blink-cursor 0.7s steps(1) infinite;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin: 50px auto; /* Centraliza o bloco verticalmente */
+    width: fit-content; /* Ajusta a largura do contêiner ao conteúdo */
+}
+
+/* Animação do cursor piscante */
+@keyframes blink-cursor {
+    from {
+        border-right-color: transparent;
+    }
+    to {
+        border-right-color: black;
+    }
+}
+
+/*------------------------------------------------------------*/
+/*CONFIGURAÇÃO DAS SEÇÕES*/
+
+/* Garantir que cada seção ocupe toda a tela */
+.full-page {
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    opacity: 0; /* Invisível inicialmente */
+    transform: scale(0.8) rotateX(15deg); /* Reduzida e inclinada */
+    transition: opacity 0.8s ease, transform 0.8s ease; /* Animação suave */
 }
 
-.section-intro h2{
-    padding: 20px;
-    font-size: 2rem;
+.full-page.visible {
+    opacity: 1; /* Torna visível */
+    transform: scale(1) rotateX(0); /* Retorna ao tamanho original e ângulo normal */
 }
 
-.section-intro p{
-    font-size: 1rem;
+/* Personalizando cada seção */
+.section-sobre {
+    scroll-margin-top: 135px;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: white;
 }
 
-/*------------------------------------------------------------*/
-/*SEÇÃO SOBRE MIM*/
-
-.section-sobre{
+.section-projetos {
+    scroll-margin-top: 135px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
 }
 
+.section-curriculo {
+    scroll-margin-top: 135px;
+    background: linear-gradient(135deg, #8fd3f4, #84fab0);
+    color: black;
+}
 /*------------------------------------------------------------*/
